@@ -99,11 +99,11 @@ export default function BirthdayEnvelopeApp() {
               style={{ fontFamily: "'Dancing Script', cursive" }}
               className="text-5xl mb-4"
             >
-              Happy Birthday🤍
+              Happy Birthday My Someone🤍
             </h1>
 
            <p className="mb-8 opacity-80">Untuk Riyandin dari Dipadin😌</p>
-            <div className="mb-8 opacity-80"> Sebelumnya maaf kalo tampilannya kurang bagus, karena aku sendiri gak terbayang sama sekali bakalan membuat yang seperti ini, jujur dari aku gak nyangka bakalan ada hari dimana aku membuat yang seperti ini untuk seseorang, jadi bisa dibilang first time lahh yaa heheh. Jadi maaf kalo tampilannya sederhana, walaupun sederhana tapi membuatnya lumayan sekali heheh bagi aku yang bukan ahli dibidangnya. Inipun bisa buat karena dibantu oleh Jin heheee, Jin Ai maksudnya😅. Yahh bgeitulah sedikit cerita heheh, selamat membaca xixixixi</div>
+            <div className="mb-8 opacity-80"> Sebelumnya maaf kalo tampilannya kurang bagus, karena aku sendiri gak terbayang sama sekali bakalan membuat yang seperti ini, jujur dari aku gak nyangka bakalan ada hari dimana aku membuat yang seperti ini untuk seseorang, jadi bisa dibilang first time lahh yaa heheh. Jadi maaf kalo tampilannya sederhana, walaupun sederhana tapi membuatnya lumayan sekali heheh bagi aku yang bukan ahli dibidangnya. Inipun bisa buat karena dibantu oleh Jin heheee, Jin Ai maksudnya😅. Yahh begitulah sedikit cerita heheh, selamat membaca xixixixi</div>
 
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto mb-8">
               <Menu label="Story" onClick={() => setPage("story")} />
@@ -177,7 +177,7 @@ Itu saja gak lebih, itupun berarti buat akumah karena aku gak mau klo semisalkan
             </h2>
 
             <SwipeGallery
-              images={["/foto1.jpg", "/foto2.jpg", "/foto3.jpg", "/foto4.jpg", "/foto5.jpg", "/foto6.jpg", "/foto7.jpg", "/foto8.jpg", "/foto9.jpg", "/foto10.jpg", "/foto11.jpg" ]}/>
+              images={["/foto12.jpg", "/foto2.jpg", "/foto3.jpg", "/foto4.jpg", "/foto5.jpg", "/foto6.jpg", "/foto7.jpg", "/foto8.jpg", "/foto9.jpg", "/foto10.jpg", "/foto11.jpg" ]}/>
 
             <div className="mt-8 text-center">
               <Menu label="Kembali" onClick={() => setPage("home")} />
