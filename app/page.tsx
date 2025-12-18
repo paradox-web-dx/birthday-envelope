@@ -251,7 +251,7 @@ function SwipeGallery({ images }: { images: string[] }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const imageWidth = 288 + 32; // w-72 + mx-4
+  const imageWidth = containerWidth * 0.8; // 80% layar
 
   // Maksimal offset agar tidak kelebihan drag
   const maxOffset = Math.max((images.length * imageWidth) - containerWidth, 0);
@@ -262,8 +262,8 @@ function SwipeGallery({ images }: { images: string[] }) {
         drag="x"
         dragConstraints={{ left: -maxOffset, right: 0 }}
         onDragEnd={(_, info) => {
-          if (info.offset.x < -50 && index < images.length - 1) setIndex(index + 1);
-          if (info.offset.x > 50 && index > 0) setIndex(index - 1);
+          if (info.offset.x < -80 && index < images.length - 1) setIndex(index + 1);
+          if (info.offset.x > 80 && index > 0) setIndex(index - 1);
         }}
         animate={{ x: -index * imageWidth }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -271,10 +271,19 @@ function SwipeGallery({ images }: { images: string[] }) {
       >
         {images.map((src, i) => (
           <img
-            key={i}
-            src={src}
-            className="w-72 h-96 object-cover rounded-xl mx-4 shadow flex-shrink-0"
-          />
+  key={i}
+  src={src}
+  className="
+    mx-4
+    rounded-xl
+    shadow
+    flex-shrink-0
+    object-cover
+    w-[80vw]
+    max-w-sm
+    aspect-[3/4]
+  "
+/>
         ))}
       </motion.div>
     </div>
